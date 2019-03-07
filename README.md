@@ -2,7 +2,9 @@
 
 Create a page that displays a contributions calendar such as the one on GitHub profile pages. This type of graph is called calendar heatmap.
 
-As a data source use `timestamps.json`, which contains a sorted array of timestamps, one timestamp per contribution.
+As a data source use [timestamps.json](./timestamps.json), which contains a sorted array of timestamps, one timestamp per contribution.
+
+![Calendar Heatmap](./calendar-heatmap.png)
 
 Each column of the graph represents one week, and starts on Sunday. The graph should display exactly 52 full weeks, starting on `2019-01-06 00:00:00 UTC` (Sunday). You don't need to display labels, just the grid. The size and spacing of grid squares is up to you.
 
