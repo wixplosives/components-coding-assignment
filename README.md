@@ -34,7 +34,7 @@ Each square should have a tooltip with the number of contributions on that date.
 * We don't expect you to write tests, but let's discuss afterwards what tests could be added.
 
 # Date Arithmetic
-You can use a library such as [Moment](https://momentjs.com/docs/), or you can rely on the fact that in JavaScript there are no leap seconds and a day is always 86,400,000 milliseconds long. This allows you to convert all dates to milliseconds from the get go, and do all arithmetic on numbers instead of dates.
+You can use a library such as [Moment](https://momentjs.com/docs/), or you can rely on the fact that in JavaScript there are no leap seconds, and a day is always 86,400,000 milliseconds long. This allows you to convert all dates to milliseconds from the get go, and do all arithmetic on numbers instead of dates.
 
 ```js
 const millis = new Date('2019-01-06T00:00:00.000Z').getTime();
