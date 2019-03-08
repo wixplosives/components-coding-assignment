@@ -27,7 +27,7 @@ Each square should have a tooltip with the number of contributions on that date.
 # Implementation Notes
 * Use technology you're comfortable with, whether it's vanilla JS and CSS, TypeScript, a library such as React or Vue, a boilerplate, or an online playground such as [CodeSandbox](https://codesandbox.io/).
 * We'd like you to implement graph drawing on your own rather than use an existing library such as D3 to demonstrate your knowledge of CSS and HTML.
-* We expect your code to be tidy, readable and reasonably modular, but don't try to make it as generic and reusable as possible.
+* We expect your code to be tidy, readable, and organized into functions. But treat it as a standalone project rather than reusable library, it doesn't need to support different date ranges, color schemes, etc.
 * Don't worry about compatibility with older browsers. Feel free to use the latest CSS and JavaScript features.
 * We don't expect you to add documentation or comments.
 * Assume that the input data is valid, you don't need to validate it.
