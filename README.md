@@ -22,14 +22,20 @@ Each square should be colored according to the number of contributions on that d
     <tr><td>> 75% of max</td><td>#196127</td></tr>
 </table>
 
-Each square should show a tooltip on hover with the number of contributions on that date. Use the native `title` attribute.
+Each square should have a tooltip with the number of contributions on that date. You can use the native `title` attribute.
 
 # Implementation Notes
 * It's up to you whether to use vanilla JS and CSS, TypeScript, a library such as React or Vue, a boilerplate, or an online playground such as [CodeSandbox](https://codesandbox.io/).
-* To see your understanding of CSS and HTML we'd like you to implement graph drawing on your own rather than use an existing library such as D3.
+* We'd like you to implement graph drawing on your own rather than use an existing library such as D3 to demonstrate your knowledge of CSS and HTML.
 * We expect your code to be tidy, readable and reasonably modular, but don't try to make it as generic and reusable as possible.
 * Don't worry about compatibility with older browsers. Feel free to use the latest CSS and JavaScript features.
-* For date arithmetic you can either use the native `Date` object or a library such as [Moment](https://momentjs.com/docs/). If you decide to go with the native Date object, this [cheatsheet](./DATE_CHEATSHEET.md) might be helpful.
-* We don't expect you to document function signatures.
+* We don't expect you to add documentation or comments.
 * Assume that the input data is valid, you don't need to validate it.
 * We don't expect you to write tests, but let's discuss afterwards what tests could be added.
+
+# Date Arithmetic
+You can use a library such as [Moment](https://momentjs.com/docs/), or you can rely on the fact that in JavaScript there are no leap seconds and a day is always 86,400,000 milliseconds long. This allows you to convert all dates to milliseconds from the get go, and do all arithmetic on numbers instead of dates.
+
+```js
+const millis = new Date('2019-01-06T00:00:00.000Z').getTime();
+```
