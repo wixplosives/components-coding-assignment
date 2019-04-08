@@ -1,10 +1,12 @@
 # Contributions Calendar
 
-Create a page that displays a contributions calendar such as the one on [GitHub profile](https://github.com/LeaVerou) pages. The result should look like this:
+Create a page that displays a contributions calendar such as the one on [GitHub profile](https://github.com/LeaVerou) pages. 
+
+As a data source we use [timestamps.json](./timestamps.json), which contains a **sorted** array of timestamps, one per contribution.
+
+The result should look like this:
 
 ![Calendar Heatmap](./calendar-heatmap.png)
-
-As a data source use [timestamps.json](./timestamps.json), which contains a sorted array of timestamps, one per contribution.
 
 Each column of the graph represents one week, and starts on Sunday. The graph should display 52 full weeks, starting on `2019-01-06 00:00:00 UTC` (Sunday). You don't need to display labels for months and days of the week. The size and spacing of squares is up to you.
 
@@ -25,11 +27,9 @@ Each square should be colored according to the number of contributions on that d
 Each square should have a tooltip with the number of contributions on that date. You can use the native `title` attribute.
 
 # Implementation Notes
-* Use technology you're comfortable with, whether it's vanilla JS and CSS, TypeScript, a library such as React or Vue, a boilerplate, or an online playground such as [CodeSandbox](https://codesandbox.io/).
 * We'd like you to implement graph drawing on your own rather than use an existing library such as D3 to demonstrate your knowledge of CSS and HTML.
-* We expect your code to be tidy, readable, and organized into functions. But you don't need to make it more general than what's required for the assignment.
+* We expect your code to be tidy, readable, and organized. But you don't need to make it more general than what's required for the assignment.
 * Don't worry about compatibility with older browsers. Feel free to use the latest CSS and JavaScript features.
-* We don't expect you to add documentation or comments.
 * Assume that the input data is valid, you don't need to validate it.
 * We don't expect you to write tests, but let's discuss afterwards what tests could be added.
 
