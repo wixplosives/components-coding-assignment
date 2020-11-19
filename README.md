@@ -39,3 +39,5 @@ You can use a library such as [Moment](https://momentjs.com/docs/) or the native
 ```js
 const millis = new Date('2019-01-06T00:00:00.000Z').getTime();
 ```
+
+If you decide to use the native `Date` object, [here are some methods](DATE_CHEATSHEET.md) that you might find useful. Also, keep in mind that we use UTC midnight as the start of each day, which means you *will* run into discrepancies if you perform date arithmetic using local time zone.
